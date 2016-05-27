@@ -17,3 +17,13 @@ By default it only searches columns a-z and rows 2-100, this can be changed at l
 Also after reaching two empty rows it will stop searching, if you need to allow for more empty rows you can change the value at line 60
 
 Once completed the program opens all links in your default browser and tells you how many tabs should have been opened.
+
+ipchecker: 
+This simple program will do exactly what it says, and then some.
+
+Originally written because my router did not cooperate with dyndns, and I need to know my IP address when I am out and about sometimes. 
+
+Before running you will need to install the pip module ipgetter, as well as go into the file and set the values of the variables from lines 25-30
+Once that is completed you can run this and it will begin checking your ip address. On first run you should get an email with your current IP address as well as two new files in the directory called iplog.txt and ipaddress.txt
+
+These will be updated as the script runs, it will check your IP once an hour and send you an email if it changes from one hour to the next. you can change the amount of wait time in lines 88 and 95 
