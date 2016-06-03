@@ -6,7 +6,9 @@ try:
     import openpyxl
 
 except:
-    print("There was an error importing required modules. If this is your first run, please run the command 'pip install openpyxl' in order to get things working.")
+    print("""There was an error importing required modules.
+          If this is your first run, please run the command
+          'pip install openpyxl' in order to get things working.""")
     exit()
 
 def clear():
@@ -15,31 +17,34 @@ def clear():
         if os.name == 'nt':
             # windows systems
             try:
-                os.system('cls')    # This is a deprecated function please update to subprocess later
-                # subprocess.run(["cls",])
+                os.system('cls')
+
                 # print("User is running Windows")
             except:
                 print("error trying to clear the console")
-                
+
         else:
-            os.system('clear')  # This is a deprecated function please update to subprocess
-            # subprocess.run(["clear",])
+            os.system('clear')
+
             # print("User is running Unix")
-            
+
     except:
         print("error checking operating system")
-    
+
 
 def main():
     clear()
-    workbook = raw_input("Which workbook are you using? \nPlease enter the full filename with extension (xlsm/xlsx) \n" )
+    workbook = raw_input("""Which workbook are you using?
+Please enter the full filename with extension
+(xlsm/xlsx)\n""")
     wb = openpyxl.load_workbook(workbook)
     clear()
     sheets = wb.get_sheet_names()
     for sheet in sheets:
         print(sheet + '\n')
-        
-    sheet = raw_input("Which client are you working on? Enter the Client name as seen above \n")
+
+    sheet = raw_input("""Which client are you working on? Enter the
+                      Client name as seen above \n""")
     sheet = wb.get_sheet_by_name(sheet)
     clear()
     count = 0
@@ -61,6 +66,6 @@ def main():
                         clear()
                         print("Opening " + str(count) + " links now")
                         exit()
-        
+
 
 main()
