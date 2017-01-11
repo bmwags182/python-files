@@ -2,7 +2,7 @@
 Python files I've written to simplify some of my daily tasks
 
 openLinks:
-This was created to go through an excel workbook/sheet and open links within the sheet. Eventually openLinks-gui was created for others to be able to use the script in the office
+This was created to go through an excel workbook/sheet and open links within the sheet. Eventually linkchecker-gui was created for others to be able to use the script in the office
 
 Opening links manually in order to confirm that they are working was tedious and time consuming, and sometimes even perfectly good working links did not work from within excel due to limitations within it.
 
@@ -20,7 +20,7 @@ Also after reaching two empty rows it will stop searching, if you need to allow 
 
 Once completed the program opens all links in your default browser and tells you how many tabs should have been opened.
 
-openLinks-gui:
+linkchecker-gui:
 This was built off the origial openLinks file which was console/terminal based and others tend to be afraid of the console so I worked towards building them something with buttons to click which not only made it easier for them to use, but reduced the amount of time I spent showing them how to make it work.
 
 This one will allow you to choose any workbook anywhere on your computer through use of a browse button. This meant users in my office were able to save their workbooks in the same place they always did, and leave a shortcut to this script on their desktop for easy access when they needed it.
