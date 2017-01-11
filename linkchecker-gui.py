@@ -1,10 +1,15 @@
 """
 This program was written By Bret Wagner for the use of Drive Social Media
+This was written to not have comments so that users were less likely to try to
+change things that they don't need to change. At a later date I will add a
+section near the top of the file where I will declare the variables you can
+change in order to adjust the behavior of the script.
+
 version 1.2.2
 
 Changelog:
 Version 1.2.2
-* Removed some extraneous comments and pint commands from development phase
+* Removed some extraneous comments and print commands from development phase
 * Added Padding around buttons to keep from clicking wrong one
 Version 1.2.1:
 * Fixed logic error that reset the empty cell counter on cells with non-link
