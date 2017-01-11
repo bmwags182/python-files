@@ -35,3 +35,9 @@ Before running you will need to install the pip module ipgetter, as well as go i
 Once that is completed you can run this and it will begin checking your ip address. On first run you should get an email with your current IP address as well as two new files in the directory called iplog.txt and ipaddress.txt
 
 These will be updated as the script runs, it will check your IP once an hour and send you an email if it changes from one hour to the next. you can change the amount of wait time in lines 88 and 95
+
+tkinter-tutorial:
+
+This is actually a direct copy from tkdocs.com which I had to bugfix the imports but otherwise the exact same code from their tutorials.
+
+I grabbed this as something I could mess with and break a few times in order to figure out how to make the linkchecker-gui. I was able to get what I needed out of this and might come back and enhance this at a later date.
