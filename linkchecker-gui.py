@@ -9,7 +9,6 @@ version 1.2.2
 
 Changelog:
 Version 1.2.2
-* Removed some extraneous comments and print commands from development phase
 * Added Padding around buttons to keep from clicking wrong one
 Version 1.2.1:
 * Fixed logic error that reset the empty cell counter on cells with non-link
@@ -101,7 +100,7 @@ def openLink(client, file):
     sheet = wb.get_sheet_by_name(client)
     count = 0
     empty_row = 0
-    for row in sheet.iter_rows('B2:Z40'):
+    for row in sheet.iter_rows('B2:Z40'): # change the range of rows and columns here
         empty_cell = 0
         if empty_row <= 2:
             for cell in row:
