@@ -11,7 +11,9 @@ and the program will tell you what number is in that spot.
 """
 
 import Tkinter as tk
+import locale
 
+locale.setlocale(locale.LC_ALL, '')
 
 class MainWindow(tk.Tk):
     def __init__(self):
@@ -60,10 +62,13 @@ class MainWindow(tk.Tk):
 
     def display_result(self, result, number):
         self.clear_result()
+        number = str(locale.format("%d", int(number), grouping=True))
+        result = locale.format("%d", result, grouping=True)
         self.resultlabel.config(text="The " + number + get_suffix(number) +
                                 " number of the fibonacci squence is " +
                                 str(result))
         self.resultlabel.grid(column=0, row=3, sticky="S", columnspan=2)
+        print(result)
 
 
     def clear_result(self):
